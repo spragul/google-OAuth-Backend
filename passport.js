@@ -28,7 +28,7 @@ passport.use(
 		{
 			clientID: process.env.CLIENT_ID,
 			clientSecret: process.env.CLIENT_SECRET,
-			callbackURL: "/auth/google/callback",
+			callbackURL: "https://google-oauth-i6qb.onrender.com/auth/google/callback",
 			scope: ["profile", "email"],
 		},
 		function (accessToken, refreshToken, profile, cb) {
